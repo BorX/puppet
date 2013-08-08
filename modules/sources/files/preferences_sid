@@ -1,0 +1,35 @@
+Package: *
+Pin: release n=squeeze
+Pin-Priority: 600
+
+Package: *
+Pin: release n=squeeze-updates
+Pin-Priority: 600
+
+Package: *
+Pin: release n=squeeze-backports
+Pin-Priority: 600
+
+Package: *
+Pin: release n=wheezy
+Pin-Priority: 700
+
+Package: *
+Pin: release n=wheezy-updates
+Pin-Priority: 700
+
+Package: *
+Pin: release n=wheezy-backports
+Pin-Priority: 700
+
+Package: *
+Pin: release n=jessie
+Pin-Priority: 800
+
+Package: *
+Pin: release n=sid
+Pin-Priority: 900
+
+Package: *
+Pin: release n=experimental
+Pin-Priority: 1
