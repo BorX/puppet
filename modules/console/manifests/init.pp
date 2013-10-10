@@ -3,5 +3,17 @@ class console {
 }
 
 class console::plus {
-	package{[ 'bc', 'dc', 'at', 'nmap', 'ftp', 'telnet', 'w3m', 'pm-utils', 'hdparm' ]:}
+	package{[
+		'bc',
+		'dc',
+		'at',
+		'nmap',
+		'ftp',
+		'telnet',
+		'w3m',
+		'pm-utils',
+		'hdparm',
+		'make',
+		'strace'
+	]:}
 }
