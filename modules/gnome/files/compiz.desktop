@@ -1,0 +1,6 @@
+[Desktop Entry]
+Encoding=UTF-8
+Name=Compiz
+Comment=Compiz Standalone
+Exec=/etc/compizconfig/start-compiz.sh
+Type=Application
