@@ -164,7 +164,7 @@ define aptproxy() {
 
 class sources_test {
 	aptrepo { "$clientcert":
-		squeeze      => present,
+		squeeze      => absent,
 		wheezy       => present,
 		jessie       => absent,
 		sid          => absent,
@@ -189,14 +189,14 @@ class sources_xen {
 
 class sources_ssh {
 	aptrepo { "$clientcert":
-		squeeze      => present,
-		wheezy       => absent,
+		squeeze      => absent,
+		wheezy       => present,
 		jessie       => absent,
 		sid          => absent,
 		experimental => absent,
 		deb_multi    => absent;
 	}
-	aptpref { 'preferences': current => squeeze; }
+	aptpref { 'preferences': current => wheezy; }
 	aptproxy { 'proxy': }
 }
 
@@ -209,7 +209,7 @@ class sources_pub {
 		experimental => absent,
 		deb_multi    => absent;
 	}
-	aptpref { 'preferences': current => squeeze; }
+	aptpref { 'preferences': current => wheezy; }
 	aptproxy { 'proxy': }
 }
 
@@ -222,7 +222,7 @@ class sources_phpmu {
 		experimental => absent,
 		deb_multi    => absent;
 	}
-	aptpref { 'preferences': current => squeeze; }
+	aptpref { 'preferences': current => wheezy; }
 	aptproxy { 'proxy': }
 }
 
@@ -232,8 +232,9 @@ class sources_petunia {
 		wheezy       => absent,
 		jessie       => absent,
 		sid          => present,
-		experimental => absent,
-		deb_multi    => absent;
+		experimental => present,
+		deb_multi    => absent,
+		component    => 'main contrib';
 	}
 	aptpref { 'preferences': current => sid; }
 }
