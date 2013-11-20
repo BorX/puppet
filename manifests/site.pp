@@ -47,7 +47,8 @@ node xen, phpmu, pub, ssh inherits debian {
 node petunia inherits debian {
 	class{'base':}
 	-> class{'security':}
-	-> class{'gnome':}
+	-> class{'kde':}
+	-> package{'unrar-free':}
 }
 
 node test inherits debian {
