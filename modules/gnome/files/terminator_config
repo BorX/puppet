@@ -1,0 +1,146 @@
+[global_config]
+  enabled_plugins = LaunchpadCodeURLHandler, APTURLHandler, Logger, LaunchpadBugURLHandler
+[keybindings]
+[profiles]
+  [[default]]
+    use_system_font = False
+    background_darkness = 0.9
+    background_type = transparent
+    background_image = None
+    scroll_on_output = False
+    font = Monospace 8
+    scrollback_infinite = True
+[layouts]
+  [[default]]
+    [[[child1]]]
+      type = Terminal
+      parent = window0
+      profile = default
+    [[[window0]]]
+      type = Window
+      parent = ""
+  [[Essai]]
+    [[[child0]]]
+      position = 0:0
+      type = Window
+      order = 0
+      parent = ""
+      size = 1366, 746
+    [[[child1]]]
+      labels = None, None
+      type = Notebook
+      order = 0
+      parent = child0
+    [[[child2]]]
+      position = 484
+      type = HPaned
+      order = 0
+      parent = child1
+    [[[child3]]]
+      position = 599
+      type = VPaned
+      order = 0
+      parent = child2
+    [[[child6]]]
+      position = 269
+      type = VPaned
+      order = 1
+      parent = child2
+    [[[child9]]]
+      position = 523
+      type = VPaned
+      order = 1
+      parent = child1
+    [[[terminal11]]]
+      profile = default
+      type = Terminal
+      order = 1
+      parent = child9
+    [[[terminal10]]]
+      profile = default
+      type = Terminal
+      order = 0
+      parent = child9
+    [[[terminal5]]]
+      profile = default
+      type = Terminal
+      order = 1
+      parent = child3
+    [[[terminal4]]]
+      profile = default
+      type = Terminal
+      order = 0
+      parent = child3
+    [[[terminal7]]]
+      profile = default
+      type = Terminal
+      order = 0
+      parent = child6
+    [[[terminal8]]]
+      profile = default
+      type = Terminal
+      order = 1
+      parent = child6
+  [[Nouvel agencement]]
+    [[[child0]]]
+      position = 0:0
+      type = Window
+      order = 0
+      parent = ""
+      size = 1366, 746
+    [[[child1]]]
+      labels = None, None
+      type = Notebook
+      order = 0
+      parent = child0
+    [[[child2]]]
+      position = 484
+      type = HPaned
+      order = 0
+      parent = child1
+    [[[child3]]]
+      position = 599
+      type = VPaned
+      order = 0
+      parent = child2
+    [[[child6]]]
+      position = 269
+      type = VPaned
+      order = 1
+      parent = child2
+    [[[child9]]]
+      position = 523
+      type = VPaned
+      order = 1
+      parent = child1
+    [[[terminal11]]]
+      profile = default
+      type = Terminal
+      order = 1
+      parent = child9
+    [[[terminal10]]]
+      profile = default
+      type = Terminal
+      order = 0
+      parent = child9
+    [[[terminal5]]]
+      profile = default
+      type = Terminal
+      order = 1
+      parent = child3
+    [[[terminal4]]]
+      profile = default
+      type = Terminal
+      order = 0
+      parent = child3
+    [[[terminal7]]]
+      profile = default
+      type = Terminal
+      order = 0
+      parent = child6
+    [[[terminal8]]]
+      profile = default
+      type = Terminal
+      order = 1
+      parent = child6
+[plugins]

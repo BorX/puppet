@@ -31,4 +31,10 @@ class gnome {
 		'filezilla',
 		'hunspell-fr'
 	]:}
+	-> file { '/home/borx/.config/terminator/config':
+		owner  => borx,
+		group  => borx,
+		mode   => 600,
+		source => 'puppet:///modules/gnome/terminator_config'
+	}
 }
