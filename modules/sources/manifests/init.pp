@@ -226,6 +226,19 @@ class sources_phpmu {
 	aptproxy { 'proxy': }
 }
 
+class sources_jardinux {
+	aptrepo { "$clientcert":
+		squeeze      => absent,
+		wheezy       => absent,
+		jessie       => absent,
+		sid          => present,
+		experimental => present,
+		deb_multi    => absent,
+		component    => 'main contrib';
+	}
+	aptpref { 'preferences': current => sid; }
+}
+
 class sources_petunia {
 	aptrepo { "$clientcert":
 		squeeze      => absent,
