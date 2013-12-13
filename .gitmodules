@@ -1,6 +1,6 @@
 [submodule "modules/iptables/files/iptables"]
 	path = modules/iptables/files/iptables
 	url = git@github.com:BorX/iptables-init.git
-[submodule "modules/dotfiles/files"]
-	path = modules/dotfiles/files
+[submodule "modules/users/files/dotfiles"]
+	path = modules/users/files/dotfiles
 	url = git@github.com:BorX/dotfiles.git

@@ -33,7 +33,6 @@ class base {
 	-> class{'exim4':}
 	-> class{'keyboard':}
 	-> class{'users':}
-	-> class{'dotfiles':}
 	-> class{'hosts':}
 	-> class{'ssh':}
 	-> class{'console':}
