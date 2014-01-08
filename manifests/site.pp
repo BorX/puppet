@@ -43,13 +43,7 @@ node xen, phpmu, pub, ssh inherits debian {
 	class{'base':}
 }
 
-node jardinux inherits debian {
-	class{'base':}
-	-> class{'security':}
-	-> package{'unrar-free':}
-}
-
-node petunia inherits debian {
+node petunia, jardinux inherits debian {
 	class{'base':}
 	-> class{'security':}
 	-> class{'kde':}
