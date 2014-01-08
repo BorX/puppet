@@ -27,13 +27,13 @@ node debian {
 }
 
 class base {
-	class{'iptables':}
+	class{'hosts':}
+	-> class{'iptables':}
 	-> class{'sources':}
 	-> class{'locales':}
 	-> class{'exim4':}
 	-> class{'keyboard':}
 	-> class{'users':}
-	-> class{'hosts':}
 	-> class{'ssh':}
 	-> class{'console':}
 	-> class{'ntp':}
