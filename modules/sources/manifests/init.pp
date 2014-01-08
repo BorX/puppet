@@ -177,14 +177,14 @@ class sources_test {
 
 class sources_xen {
 	aptrepo { "$clientcert":
-		squeeze      => present,
+		squeeze      => absent,
 		wheezy       => present,
 		jessie       => absent,
 		sid          => absent,
 		experimental => absent,
 		deb_multi    => absent;
 	}
-	aptpref { 'preferences': current => squeeze; }
+	aptpref { 'preferences': current => wheezy; }
 }
 
 class sources_ssh {
