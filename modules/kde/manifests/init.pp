@@ -1,6 +1,5 @@
 class kde {
-	package{'cairo-dock':}
-	-> package{'iceweasel-l10n-fr':} -> package{'flashplugin-nonfree':}
+	package{'iceweasel-l10n-fr':} -> package{'flashplugin-nonfree':}
 	-> package{[
 		'vlc',
 		'terminator',
