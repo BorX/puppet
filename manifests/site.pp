@@ -43,6 +43,11 @@ node xen, phpmu, pub, ssh inherits debian {
 	class{'base':}
 }
 
+node jvmu inherits debian {
+	class{'base':}
+	-> package{'mysql-server':}
+}
+
 node petunia, jardinux inherits debian {
 	class{'base':}
 	-> class{'security':}

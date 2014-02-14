@@ -226,6 +226,19 @@ class sources_phpmu {
 	aptproxy { 'proxy': }
 }
 
+class sources_jvmu {
+	aptrepo { "$clientcert":
+		squeeze      => absent,
+		wheezy       => present,
+		jessie       => absent,
+		sid          => absent,
+		experimental => absent,
+		deb_multi    => absent;
+	}
+	aptpref { 'preferences': current => wheezy; }
+	aptproxy { 'proxy': }
+}
+
 class sources_jardinux {
 	aptrepo { "$clientcert":
 		squeeze      => absent,
@@ -234,7 +247,7 @@ class sources_jardinux {
 		sid          => present,
 		experimental => present,
 		deb_multi    => absent,
-		component    => 'main contrib';
+		component    => 'main contrib non-free';
 	}
 	aptpref { 'preferences': current => sid; }
 }
