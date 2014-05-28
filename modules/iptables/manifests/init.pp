@@ -25,21 +25,16 @@ class iptables {
 		owner   => root,
 		group   => root,
 		mode    => 755,
-		content => '#!/bin/bash
-#!/bin/sh
+		content => '#!/bin/sh
 ### BEGIN INIT INFO
-# Provides:
-# Required-Start:    iptables
+# Provides:          iptables-init
+# Required-Start:
 # Required-Stop:
-# Default-Start:     S
+# Default-Start:     2 3 4 5
 # Default-Stop:
-# Short-Description: Initialize iptables rules.
-# Description:
+# Short-Description: Initialize iptables rules
+# Description:       Initialization of iptables rules.
 ### END INIT INFO
 /etc/iptables/iptables-init $1',
-	}
-	-> file { '/etc/rc2.d/S99iptables':
-		ensure => 'link',
-		target => '/etc/init.d/iptables',
 	}
 }
