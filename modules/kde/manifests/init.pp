@@ -1,5 +1,10 @@
 class kde {
-	package{'iceweasel-l10n-fr':} -> package{'flashplugin-nonfree':}
+	package{[
+		'kde-full',
+		'kde-standard',
+		'kde-l10n-fr'
+	]:}
+	-> package{'iceweasel-l10n-fr':} -> package{'flashplugin-nonfree':}
 	-> package{[
 		'vlc',
 		'terminator',
